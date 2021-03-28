@@ -78,7 +78,7 @@ public class Wiu extends Actor
         }
         if(level == 6){
             Wallone wallone = new Wallone();
-            getWorld().addObject(wallone, 550, 380);
+            getWorld().addObject(wallone, 550, 320);
         }
         if(isTouching(Wallone.class)){
             Greenfoot.ask("Deseja salvar o jogo?");
