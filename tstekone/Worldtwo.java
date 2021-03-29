@@ -22,5 +22,6 @@ public class Worldtwo extends World
     
     void summon(){
     addObject(new WiuTwo(), 550, 50);
+    addObject(new JewelOne(), 550, 400);
     }
 }
