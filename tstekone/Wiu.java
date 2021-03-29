@@ -13,6 +13,10 @@ public class Wiu extends Actor
     int life = 3;
     int timeForHit = 50;
     int timeShot = 0;
+    int imageR = 0;
+    int imageL = 0;
+    int imageU = 0;
+    int imageD = 0;
     /**
      * Act - do whatever the Wiu wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -34,18 +38,54 @@ public class Wiu extends Actor
         if(Greenfoot.isKeyDown("w")){
             setRotation(270);
             move(3);
+            imageU ++;
+            if(imageU == 1){
+                setImage("wiuup1.png");
+            } else if(imageU == 2){
+                setImage("wiuup2.png");
+            } else if(imageU == 3){
+                setImage("wiuup3.png");
+                imageU = 0;
+            }
         }
         if(Greenfoot.isKeyDown("d")){
             setRotation(0);
             move(3);
+            imageR ++;
+            if(imageR == 1){
+                setImage("wiuright11.png");
+            } else if(imageR == 2){
+                setImage("wiuright12.png");
+            } else if(imageR == 3){
+                setImage("wiuright13.png");
+                imageR = 0;
+            }
         }
         if(Greenfoot.isKeyDown("s")){
             setRotation(90);
             move(3);
+            imageD ++;
+            if(imageD == 1){
+                setImage("wiudown1.png");
+            } else if(imageD == 2){
+                setImage("wiudown2.png");
+            } else if(imageD == 3){
+                setImage("wiudown3.png");
+                imageD = 0;
+            }
         }  
         if(Greenfoot.isKeyDown("a")){
             setRotation(180);
             move(3);
+            imageL ++;
+            if(imageL == 1){
+                setImage("wiuleft1.png");
+            } else if(imageL == 2){
+                setImage("wiuleft2.png");
+            } else if(imageL == 3){
+                setImage("wiuleft3.png");
+                imageL = 0;
+            }
         }
         if(getX() == 1099) {
             setLocation(1, getY());
