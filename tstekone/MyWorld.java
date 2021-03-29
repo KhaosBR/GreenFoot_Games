@@ -33,9 +33,9 @@ public class MyWorld extends World
         //Player
         addObject(new Wiu(), 550, 300);
         //Enemy
-        addObject(new Malves(), 50, 550);
-        addObject(new Malves(), 1050, 550);
-        addObject(new Malves(), 550, 50);
+        addObject(new Ant(), 50, 550);
+        addObject(new Ant(), 1050, 550);
+        addObject(new Ant(), 550, 50);
         //wall center
         addObject(new Block(), 620, 295);
         addObject(new Block(), 480, 295);
