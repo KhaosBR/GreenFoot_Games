@@ -21,6 +21,7 @@ public class Malves extends Actor
     }
     void matar(){
         removeTouching(Ant.class);
+        removeTouching(Sucena.class);
     }
     void movement(){
         move(3);
@@ -49,6 +50,9 @@ public class Malves extends Actor
             setLocation(getX(), 598);
         }
         if(isTouching(Block.class)){
+        turn(180);
+        }
+        if(isTouching(Grasswall.class)){
         turn(180);
         }
     }

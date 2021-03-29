@@ -14,6 +14,6 @@ public class Grasswall extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        removeTouching(Sucena.class);
     }    
 }

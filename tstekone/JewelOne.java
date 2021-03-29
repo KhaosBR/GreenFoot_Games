@@ -16,19 +16,25 @@ public class JewelOne extends Actor
     public void act() 
     {
         rotation ++;
-        if(rotation == 1){
+        if(rotation == 5){
         setImage("jewel1.png");
-        } else if(rotation == 2){
+        } else if(rotation ==10){
         setImage("jewel2.png");
-        } else if(rotation == 3){
+        } else if(rotation == 15){
         setImage("jewel3.png");
-        } else if(rotation == 4){
+        } else if(rotation == 20){
         setImage("jewel4.png");
-        } else if(rotation == 5){
+        } else if(rotation == 25){
         setImage("jewel5.png");
-        } else if(rotation == 6){
+        } else if(rotation == 30){
         setImage("jewel6.png");
+        } else if(rotation == 35){
+        setImage("jewel7.png");
+        } else if(rotation == 40){
+        setImage("jewel8.png");
+        } else if(rotation == 45){
+        setImage("jewel9.png");
         rotation = 0;
-        }
+    }
     }    
 }

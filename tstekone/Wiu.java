@@ -30,8 +30,9 @@ public class Wiu extends Actor
     }
 
     void movement(){
-        if(hitGrasswall()==true){
-            move(-3);}
+        if(isTouching(Grasswall.class)){
+        move(-3);
+        }
         if(isTouching(Block.class)){
         move(-3);
         }
@@ -100,13 +101,7 @@ public class Wiu extends Actor
             setLocation(getX(), 598);
         }
     }
-
-    public boolean hitGrasswall(){
-        if(isTouching(Grasswall.class)){
-            return true;
-        }else {return false;} 
-    }
-
+    
     void nextlevel(){
         if(isTouching(Jewel.class)){
             level ++;
@@ -127,7 +122,6 @@ public class Wiu extends Actor
     }
 
     void shooting(){
-        getWorld().showText("" + removesucena, 500, 300);
         if(timeShot -- < 0){
             if(Greenfoot.isKeyDown("space")){
                 Sucena sucena = new Sucena();
