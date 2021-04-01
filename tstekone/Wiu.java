@@ -40,12 +40,14 @@ public class Wiu extends Actor
             setRotation(270);
             move(3);
             imageU ++;
-            if(imageU == 1){
+            if(imageU == 2){
                 setImage("wiuup1.png");
-            } else if(imageU == 2){
+            } else if(imageU == 4){
                 setImage("wiuup2.png");
-            } else if(imageU == 3){
+            } else if(imageU == 6){
                 setImage("wiuup3.png");
+            } else if(imageU == 8){
+                setImage("wiuup2.png");
                 imageU = 0;
             }
         }
@@ -53,12 +55,14 @@ public class Wiu extends Actor
             setRotation(0);
             move(3);
             imageR ++;
-            if(imageR == 1){
+            if(imageR == 2){
                 setImage("wiuright11.png");
-            } else if(imageR == 2){
+            } else if(imageR == 4){
                 setImage("wiuright12.png");
-            } else if(imageR == 3){
+            } else if(imageR == 6){
                 setImage("wiuright13.png");
+            } else if(imageR == 8){
+                setImage("wiuright12.png");
                 imageR = 0;
             }
         }
@@ -66,12 +70,14 @@ public class Wiu extends Actor
             setRotation(90);
             move(3);
             imageD ++;
-            if(imageD == 1){
+            if(imageD == 2){
                 setImage("wiudown1.png");
-            } else if(imageD == 2){
+            } else if(imageD == 4){
                 setImage("wiudown2.png");
-            } else if(imageD == 3){
+            } else if(imageD == 6){
                 setImage("wiudown3.png");
+            } else if(imageD == 8){
+                setImage("wiudown2.png");
                 imageD = 0;
             }
         }  
@@ -79,12 +85,14 @@ public class Wiu extends Actor
             setRotation(180);
             move(3);
             imageL ++;
-            if(imageL == 1){
+            if(imageL == 2){
                 setImage("wiuleft1.png");
-            } else if(imageL == 2){
+            } else if(imageL == 4){
                 setImage("wiuleft2.png");
-            } else if(imageL == 3){
+            } else if(imageL == 6){
                 setImage("wiuleft3.png");
+            } else if(imageL == 8){
+                setImage("wiuleft2.png");
                 imageL = 0;
             }
         }
