@@ -19,12 +19,17 @@ public class Sucena extends Actor
         if(isTouching(Malves.class)){
             score = score + 10;
         }
-        
+
         getWorld().showText("Score: " + score, 40, 40);
-        removeTouching(Malves.class);
+        
         if(isAtEdge()) {
-        getWorld().removeObject(this);
+            getWorld().removeObject(this);
+        } else{
+            if(isTouching(Malves.class)){
+                removeTouching(Malves.class);
+                getWorld().removeObject(this);
+            }
         }
     }
-    
+
 }
